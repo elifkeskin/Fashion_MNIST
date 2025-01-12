@@ -23,14 +23,23 @@ Each value is the darkness of the pixel (1 to 255)
 Each training and test example is assigned to one of the following labels:
 
 0 T-shirt/top
+
 1 Trouser
+
 2 Pullover
+
 3 Dress
+
 4 Coat
+
 5 Sandal
+
 6 Shirt
+
 7 Sneaker
+
 8 Bag
+
 9 Ankle boot
 
 **NOTE:** We will import the dataset from the dataset folder using the Keras module.
