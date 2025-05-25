@@ -1,61 +1,172 @@
-**Project Name:** Fashion MNIST
+# Fashion MNIST Classification
 
-**Project Description:** It provides a dataset of 70,000 black and white fashion images in 10 different clothing categories.
+## 📝 Project Description
 
-**Project Purpose:** Correctly classifying 10 different types of classes.
+This project utilizes the Fashion MNIST dataset, which consists of 70,000 black and white images of clothing items categorized into 10 different classes. The goal is to build a deep learning model that can accurately classify these images into their respective categories.
 
-**Dataset:**
+## 🎯 Project Purpose
 
-It is consisting of a training set of 60,000 examples and a test set of 10,000 examples.
+To correctly classify images into 10 different types of clothing categories using deep learning techniques.
 
-The dimensions of the images are 28*28 pixels.The format of the images is "png".
+## 📂 Dataset
 
-Each row is a separate image.
+- **Total Images:** 70,000 (60,000 training, 10,000 test)
+- **Image Size:** 28x28 pixels (PNG format)
+- **Data Format:**  
+  - Each row represents a single image.
+  - The first column is the class label.
+  - The remaining 784 columns are pixel values (1 to 255) indicating the darkness of each pixel.
 
-Column 1 is the class label.
+### Labels
 
-Remaining columns are pixel numbers (784 total).
+| Label | Category      |
+|-------|--------------|
+| 0     | T-shirt/top  |
+| 1     | Trouser      |
+| 2     | Pullover     |
+| 3     | Dress        |
+| 4     | Coat         |
+| 5     | Sandal       |
+| 6     | Shirt        |
+| 7     | Sneaker      |
+| 8     | Bag          |
+| 9     | Ankle boot   |
 
-Each value is the darkness of the pixel (1 to 255)
+**Note:** The dataset will be imported from the dataset folder using the Keras module.
 
-**Labels**
+## 🛠️ Libraries Used
 
-Each training and test example is assigned to one of the following labels:
+- **tensorflow:** Open-source deep learning library for building and training neural networks.
+- **matplotlib:** Data visualization library for plotting images and results.
 
-0 T-shirt/top
+## 🚦 Project Steps
 
-1 Trouser
+1. **Data Preprocessing:**  
+   Load and preprocess the dataset to prepare it for model training.
 
-2 Pullover
+2. **Model Building:**  
+   Select an appropriate model architecture and build the neural network.
 
-3 Dress
+3. **Model Training:**  
+   Train the model on the training dataset.
 
-4 Coat
+4. **Model Evaluation:**  
+   Evaluate the model’s performance on the test dataset and visualize the results.
 
-5 Sandal
+## 🚀 Getting Started
 
-6 Shirt
+1. **Clone the Repository**
+    ```bash
+    git clone https://github.com/elifkeskin/Fashion_MNIST.git
+    cd Fashion_MNIST
+    ```
 
-7 Sneaker
+2. **Install Dependencies**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-8 Bag
+3. **Run the Project**
+    - Open the main script or notebook and follow the steps to preprocess data, build, train, and evaluate the model.
 
-9 Ankle boot
+## 📊 Example Visualization
+   ```bash
+import matplotlib.pyplot as plt
+import numpy as np
 
-**NOTE:** We will import the dataset from the dataset folder using the Keras module.
+# Example: Display a sample image
+plt.imshow(X_train[0].reshape(28,28), cmap='gray')
+plt.title(f"Label: {y_train[0]}")
+plt.show()
+    ```
 
-**Libraries We Will Use:**
+Fashion MNIST dataset, which consists of 70,000 black and white images of clothing items categorized into 10 different classes. The goal is to build a deep learning model that can accurately classify these images into their respective categories.
 
-**tensorflow:** It is an open source deep learning library.
+## 🎯 Project Purpose
 
-**matplotlib:** It is a data visualization library.
+To correctly classify images into 10 different types of clothing categories using deep learning techniques.
 
-**Project Steps:**
+## 📂 Dataset
 
-**1)** We will first pass the dataset through preprocessing steps.
+- **Total Images:** 70,000 (60,000 training, 10,000 test)
+- **Image Size:** 28x28 pixels (PNG format)
+- **Data Format:**  
+  - Each row represents a single image.
+  - The first column is the class label.
+  - The remaining 784 columns are pixel values (1 to 255) indicating the darkness of each pixel.
 
-**2)** We will choose a model architecture on the dataset and build the model.
+### Labels
 
-**3)** We train the model.
+| Label | Category      |
+|-------|--------------|
+| 0     | T-shirt/top  |
+| 1     | Trouser      |
+| 2     | Pullover     |
+| 3     | Dress        |
+| 4     | Coat         |
+| 5     | Sandal       |
+| 6     | Shirt        |
+| 7     | Sneaker      |
+| 8     | Bag          |
+| 9     | Ankle boot   |
 
-**4)** We evaluate the model.
+**Note:** The dataset will be imported from the dataset folder using the Keras module.
+
+## 🛠️ Libraries Used
+
+- **tensorflow:** Open-source deep learning library for building and training neural networks.
+- **matplotlib:** Data visualization library for plotting images and results.
+
+## 🚦 Project Steps
+
+1. **Data Preprocessing:**  
+   Load and preprocess the dataset to prepare it for model training.
+
+2. **Model Building:**  
+   Select an appropriate model architecture and build the neural network.
+
+3. **Model Training:**  
+   Train the model on the training dataset.
+
+4. **Model Evaluation:**  
+   Evaluate the model’s performance on the test dataset and visualize the results.
+
+## 🚀 Getting Started
+
+1. **Clone the Repository**
+    ```bash
+    git clone https://github.com/yourusername/fashion-mnist-classification.git
+    cd fashion-mnist-classification
+    ```
+
+2. **Install Dependencies**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. **Run the Project**
+    - Open the main script or notebook and follow the steps to preprocess data, build, train, and evaluate the model.
+
+## 📊 Example Visualization
+
+  ```bash
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Example: Display a sample image
+plt.imshow(X_train[0].reshape(28,28), cmap='gray')
+plt.title(f"Label: {y_train[0]}")
+plt.show()
+   ```
+
+🤝 Contributing
+Contributions are welcome!
+
+1. **Fork the repository**
+2. **Create a new branch** (git checkout -b feature-branch)
+3.**Commit your changes** (git commit -m 'Add new feature')
+4.**Push to the branch** (git push origin feature-branch)
+5.**Open a Pull Request**
+
+📄 License
+This project is licensed under the MIT License.
